@@ -1,0 +1,22 @@
+<div class="product-list">
+    <h1>Product List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>description</th>
+                <th>category</th>
+                <th>stock</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of productList">
+                <td>{{item.id}}</td>
+                <td>{{item.title}}</td>
+                <td>{{item.description}}</td>
+                <td>{{item.category}}</td>
+                <td>{{item.stock}}</td>
+            </tr>
+        </tbody>
+    </table>
