@@ -1,0 +1,15 @@
+<p-card 
+  *ngFor="let item of productList" 
+  [style]="{ width: '30rem', overflow: 'hidden' }"
+>
+  <ng-template #header>
+    <img alt="Product" [src]="item.thumbnail" width="300" />
+  </ng-template>
+
+  <ng-template #title>{{ item.title }}</ng-template>
+  <ng-template #subtitle>Stock: {{ item.stock }}</ng-template>
+
+  <p>Description: {{ item.description }}</p>
+  <p>Item Number: {{ item.id }}</p>
+  <p>Category: {{ item.category }}</p>
+</p-card>
